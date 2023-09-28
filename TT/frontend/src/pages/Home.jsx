@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/home.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import '../components/Footer/Footer'
 
 import { Container,Row,Col } from 'reactstrap';
 import heroImg from '../assets/images/hero-img01.jpg';
@@ -9,18 +11,16 @@ import worldImg from '../assets/images/world.png';
 import experienceImg from '../assets/images/experience.png';
 
 import Subtitle from '../shared/Subtitle';
-
 import SearchBar from '../shared/SearchBar';
 import ServicesList from '../services/ServicesList';
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 import MasonryImageGallery from '../components/image-gallery/MasonryImgesGallery';
-import Testimonial from '../components/Testimonial/testimonial.jsx';
+import Testimonial from '../components/Testimonial/testimonial';
 import Newsletter from '../shared/Newsletter';
 
 const Home = () => {
   return (
     <>
-      {/* hero section starts */}
       <section>
         <Container>
           <Row>
@@ -30,7 +30,7 @@ const Home = () => {
                   <Subtitle subtitle={'Know Before You Go'}/>
                   <img src={worldImg} alt="" />
                 </div>
-                <h1>Traveling opens the door to creating <span className="highlight">memories</span></h1>
+                <h1>Travelling opens the door to creating <span className="highlight">memories</span></h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Neque ratione sunt dicta minus nobis? Voluptate repellendus 
                 labore non at aliquid vero doloribus itaque alias debitis, 
@@ -54,7 +54,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* hero section end */}
+
       <section>
         <Container>
           <Row>
@@ -67,7 +67,6 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* === Featured tour section === */}
       <section>
         <Container>
           <Row>
@@ -79,9 +78,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* === Featured tour section === */}
 
-      {/* experience starts */}
       <section>
         <Container>
           <Row>
@@ -119,9 +116,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* experience ends */}
 
-      {/* gallery section Start */}
       <section>
         <Container>
           <Row>
@@ -135,8 +130,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* gallery section End */}
-      {/* testimonial section start */}
+
       <section>
         <Container>
           <Row>
@@ -150,10 +144,9 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* testimonial section end */}
       <Newsletter/>
     </>
   );
 };
 
-export default Home;
+export default Home; 

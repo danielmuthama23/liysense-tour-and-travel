@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ServiceList from './ServiceCard.jsx';
+import ServiceCard from './ServiceCard';
 import {Col} from "reactstrap";
 
 import weatherImg from '../assets/images/weather.png'
@@ -15,7 +15,7 @@ desc:"Lorem Ipsum"}
 
 const ServicesList = ({item}) => {
 
-    const {imgUrl, title,desc} = item
+    // const {imgUrl, title,desc} = item
 
   return (
     <>

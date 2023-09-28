@@ -1,7 +1,7 @@
 import React from 'react'
 import './service-card.css'
 
-const ServicesList = ({item}) => {
+const ServicesCard = ({item}) => {
 
     const {imgUrl, title,desc} = item
 
@@ -16,4 +16,4 @@ const ServicesList = ({item}) => {
   )
 }
 
-export default ServicesList
+export default ServicesCard

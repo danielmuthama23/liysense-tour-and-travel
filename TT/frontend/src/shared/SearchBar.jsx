@@ -7,14 +7,12 @@ const SearchBar = () => {
 
     const locationRef = useRef('')
     const distanceRef = useRef(0)
-    // eslint-disable-next-line no-unused-vars
     const maxGroupMaxRef = useRef(0)
 
     const searchHandler = ()=> {
 
         const location = locationRef.current.value
         const distance = distanceRef.current.value
-        // eslint-disable-next-line no-undef
         const maxGroupSize = maxGroupSizeRef.current.value
 
         if(location==='' || distance==='' || maxGroupSize===''){

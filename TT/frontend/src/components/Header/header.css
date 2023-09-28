@@ -2,6 +2,8 @@
     width: 100%;
     height: 80px;
     line-height: 80px;
+    text-decoration: none;
+
 }
 
 .logo img {
@@ -10,6 +12,8 @@
 
 .menu {
     margin-bottom: 0;
+    list-style: none;
+
 }
 
 .nav_item a {
@@ -17,14 +21,20 @@
     color: var(--heading-color);
     font-weight: 500;
     font-size: 1.1rem;
+
+
 }
 
 .nav_item a:hover {
     color: inherit;
+    background-color: blue;
+    padding: 20%;    
+
 }
 
 .nav_item a:active_link {
-    color: var(--secondary-color);
+    color: var(--primary-color);
+
 }
 
 .mobile_menu {
